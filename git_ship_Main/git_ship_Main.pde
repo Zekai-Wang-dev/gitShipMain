@@ -42,6 +42,7 @@ boolean showDialogue;
 
 Star[] stars = new Star[400];
 Planet[] planets;
+SpaceStation alpha;
 Person person;
 Checksum healthbar;
 Junk junk;
@@ -74,6 +75,7 @@ void draw(){
       planet.update();
       planet.display();
     }
+     alpha.display();
   
     //viewscreen
     if(showDialogue){
@@ -119,6 +121,17 @@ void init(){
   char[] p = binary(healthbar.checksum).toCharArray();
   p[p.length - 5] = '1';
   healthbar.checksum = unbinary(new String(p));
+  char[] bin = binary(healthbar.checksum).toCharArray();
+  bin[bin.length-4] = '1';
+  bin[bin.length-8] = '1';
+  
+  //Space Station Alpha
+  alpha = new SpaceStation();
+  bin[bin.length-8] = '0';
+  //Space Station Alpha
+  
+  healthbar.checksum = unbinary(new String(bin));
+  
   //dialogue
   person = new Person();
   //junk
@@ -129,12 +142,13 @@ void init(){
 
 void dropOutOfWarp(){
   speed = 0.00;
-  float rndX = 442; // 150 to 450
-  float rndY = 140; // 100, 200
+  float rndX = 298;
+  float rndY = 149;
   x = map(rndX, 0.25*width, 0.75*width, 0, 10);
   y = map(rndY, 0.25*height, 0.5*height, 0, 10);
   planets[0].sliders();
   location = "Thruple System";
+  location = "Trafalgar Stn";
 }
 
 void noSignal(){
