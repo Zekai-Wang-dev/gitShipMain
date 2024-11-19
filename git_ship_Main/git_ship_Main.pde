@@ -156,7 +156,7 @@ void dropOutOfWarp(){
   earth.sliders();
   location = "Planet Name";
   planets[0].sliders();
-  location = "Kessel";
+  location = "Many Moons";
 }
 
 void noSignal(){

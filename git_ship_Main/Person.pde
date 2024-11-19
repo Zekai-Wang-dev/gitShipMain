@@ -18,7 +18,7 @@ class Person {
   Letter[] display = { _a, _b, _c };
   
   Person(){
-    SetIdentity(2);
+    SetIdentity(1);
   }
   
   void SetIdentity(int i){
@@ -208,6 +208,10 @@ class Person {
     Font.draw(320, 90, 4, _p, _e, _a, _c, _e, _exclam);
     Font.draw(320, 130, 4, _2);
     Font.draw(320, 170, 4, _3);
+    Font.draw(320, 50, 4, _w, _e, _space, _c, _o, _m, _e, _space, _i, _n);
+    Font.draw(320, 90, 4, _p, _e, _a, _c, _e, _exclam);
+    Font.draw(320, 130, 4, _2);
+    Font.draw(320, 170, 4, _3);
     Font.draw(320, 50, 4, _a, _l, _a, _s, _comma, _space, _t, _h, _e);
     Font.draw(320, 90, 4, _c, _a, _k, _e, _space, _i, _s, _space, _a, _space);
     Font.draw(320, 130, 4, _l, _i, _e, _exclam, _space, _w, _h, _a, _t);
@@ -224,5 +228,9 @@ class Person {
       Font.draw(320, 130, 4, _t, _e, _c, _h, _n, _o, _l, _o, _g, _y, _comma);
       Font.draw(320, 170, 4, _m, _e, _r, _g, _e, _space, _i, _t, _space, _i, _n, _exclam);
     }
+    Font.draw(320, 50, 4, _h, _e, _r, _e, _space, _o, _n, _space, _m, _a, _n, _y);
+    Font.draw(320, 90, 4, _m, _o, _o, _n, _s, _space, _w, _e, _space, _d, _o);
+    Font.draw(320, 130, 4, _m, _a, _n, _y, _space, _t, _h, _i, _n, _g, _s);
+    Font.draw(320, 170, 4, _w, _i, _t, _h, _space, _m, _o, _o, _n, _s, _period);
   }
 }

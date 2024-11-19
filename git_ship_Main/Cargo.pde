@@ -2,5 +2,7 @@
 ArrayList<String> cargo = new ArrayList<String>();
 
 void loadCargo(){
-  cargo.add("16 tons of space station scrap");
+  cargo.add("One freshly baked moon pie");
+  cargo.add("Two crates of moonshine");
+  cargo.add("28 boxes of mooncakes");
 }
